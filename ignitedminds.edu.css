@@ -208,8 +208,7 @@ ul li {
     width: 100%; /* Full width inside popup */
     height: 300px; /* Fixed height for better display */
     border: none;
-    align-items: center;
-    align-content: center;
+    
 }
 
 /* Responsive Design */

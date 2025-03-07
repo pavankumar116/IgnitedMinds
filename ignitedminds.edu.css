@@ -205,7 +205,7 @@ ul li {
 
 /* iFrame Inside Popup */
 .popup iframe {
-    width: 100%; /* Full width inside popup */
+    width: 50%; /* Full width inside popup */
     height: 300px; /* Fixed height for better display */
     border: none;
     

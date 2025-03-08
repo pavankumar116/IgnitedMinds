@@ -3,126 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="ignitedminds.edu.css">
-    
+    <title>Ignited Minds Edu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            text-align: center;
+            padding: 50px;
+            background: #f8f9fa;
+        }
+        .highlight {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .language-btn {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header class="header" >
-        
-        <img src="imlogo.png" alt="Logo" class="logo"> <!-- Replace "logo.png" with your image -->
-        <h1><b>Ignited Minds Edu</b></h1>
-        <nav class="nav-links">
-            <a href="imhome.html">Home</a>
-        </nav>
-       
-    </header>
-    <button class="language-btn" onclick="toggleLanguage()"><b>ENG ⇄ TEL</b></button>
-
-
-    <div class="buttons">
-        <a class="contactus" onclick="openPopupcu()">Contact Us</a>
-        <a class="login" onclick="openPopup()">Login</a>
-        <a class="register" onclick="openPopupr()">Register</a>
-    </div>
-
-
-    <!-- contact us popup -->
-
-    <div id = "contactuspopup" class="popup">
-        <h2>CONTACT US</h2>
-        <h3>Name    : Pavan Kumar N </h3>
-        <h3>Contact Us: +91 73826 75499</h3>
-        <h3>Chat With US : </h3>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeM7NeMc8RNpNJlPN9NA1Gg9GS9K_KWexOQTUnxc5s2-iXKHQ/viewform?embedded=true"></iframe>
-        <h3>Our Location : </h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.6553524177095!2d81.8089624695625!3d16.44404308526758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37df006e93a7bb%3A0x985491802bee0a9a!2sIME!5e0!3m2!1sen!2sin!4v1741333470968!5m2!1sen!2sin"></iframe>
-
-        <button class="close-btn" onclick="closePopupcu()">Back</button>
-
-    </div>
-
-
-    <!-- LOGIN POPUP FORM -->
-    <div id="loginPopup" class="popup">
-        <h2>LOGIN</h2>
-        <input type="text" id="studentID" placeholder="Student ID">
-        <input type="password" id="key" placeholder="Key">
-        <button onclick="submitLogin()">Submit</button>
-        <button class="close-btn" onclick="closePopup()">Back</button>
-    </div>
-
-    <!-- POPUP GOOGLE FORM -->
-    <div id="registerPopup" class="popup">
-        <h2>REGISTER</h2>
-        <!--<button class="open-form" onclick="openForm()">Open Form</button>-->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdsnMJgx3fe8LYm0-8wdLCOvlfzHI5if02GmL8ybN66Yn0Ynw/viewform?embedded=true" width="150" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        <button class="close-btn" onclick="closePopupr()">Back</button>
-    </div>
-
-    <div class="container">
-        <div id="english-content">
-            <h1>✨<b>WELCOME</b>✨</h1>
-            <h2>🔊 Your Partner in Academic Excellence</h2>
-            <p>At <span class="highlight">Ignited Minds</span>, we believe that every student has the potential to succeed with the right guidance and support...</p>
-            <h2>Why to Choose Ignited Minds? 🤔</h2>
-            <ul>
-                <li>👉 Experienced educators passionate about teaching and student success.</li>
-                <li>👉 Personalized learning plans for every student.</li>
-                <li>👉 Comprehensive services including homework help and exam preparation.</li>
-                <li>👉 Flexible scheduling options, including evening and weekend sessions.</li>
-                <li>👉 A welcoming environment for students to ask questions and grow.</li>
-            </ul>
-            <h2>Our Services 🤓</h2>
-            <ul>
-                <li>📚 Subject Tutoring</li>
-                <li>📑 Exam Preparation</li>
-                <li>🧑‍🏫 Homework Assistance</li>
-                <li>🧑‍💻 Study Skills & Strategies</li>
-                <li>🧑‍🏫🧑‍🎓 Student - Mentor Interaction</li>
-                <li>🗒️ Weekly Tests</li>
-                <li>🏠 Student Results to Parents</li>
-                <li>🔍 Students Status Monitoring and Improving</li>
-            </ul>
-            <h2>Join Us Today! 🤗</h2>
-            <p>Are you ready to take your learning to the next level? Join Our Ignited Minds Edu Access and experience the difference our expert tutoring can make.</p>
-            
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="ime_logo.png" alt="Logo" height="40"> Ignited Minds Edu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#login">Login/Register</a></li>
+                </ul>
+            </div>
         </div>
-        
-        <div id="telugu-content" class="hidden">
-            <h1>✨<b>స్వాగతం</b>✨</h1>
-            <h2>🔊 మీ అకాడమిక్ విజయంలో భాగస్వామి</h2>
-            <p><span class="highlight">ఇగ్నైటెడ్ మైండ్స్</span> వద్ద, సరైన మార్గదర్శకత్వం మరియు మద్దతుతో ప్రతి విద్యార్థి విజయాన్ని సాధించగలడని మేము నమ్ముతున్నాము...</p>
-            <h2>ఎందుకు ఇగ్నైటెడ్ మైండ్స్? 🤔</h2>
-            <ul>
-                <li>👉 బోధన మరియు విద్యార్థుల విజయంపై ఆసక్తి కలిగిన అనుభవజ్ఞులైన బోధకులు.</li>
-                <li>👉 ప్రతి విద్యార్థికి వ్యక్తిగత విద్యా ప్రణాళికలు.</li>
-                <li>👉 హోం వర్క్ సహాయం మరియు పరీక్షా సిద్ధత వంటి సమగ్ర సేవలు.</li>
-                <li>👉 సౌకర్యవంతమైన షెడ్యూలింగ్ ఎంపికలు, సాయంత్రం మరియు వీకెండ్ సెషన్లు.</li>
-                <li>👉 విద్యార్థులకు ప్రశ్నలు అడగడానికి మరియు అభివృద్ధి చెందడానికి స్నేహపూర్వక వాతావరణం.</li>
-            </ul>
-            <h2>మా సేవలు 🤓</h2>
-            <ul>
-                <li>📚 సబ్జెక్ట్ ట్యుటోరింగ్</li>
-                <li>📑 పరీక్షా సిద్ధత</li>
-                <li>🧑‍🏫 హోం వర్క్ సహాయం</li>
-                <li>🧑‍💻 చదువు నైపుణ్యాలు & వ్యూహాలు</li>
-                <li>🧑‍🏫🧑‍🎓 విద్యార్థి - మెంటర్ పరస్పర చర్య</li>
-                <li>🗒️ వారపు పరీక్షలు</li>
-                <li>🏠 తల్లిదండ్రులకు విద్యార్థుల ఫలితాలు</li>
-                <li>🔍 విద్యార్థుల స్థితి పర్యవేక్షణ మరియు అభివృద్ధి</li>
-            </ul>
-            <h2>ఇప్పుడే చేరండి! 🤗</h2>
-            <p>మీ అభ్యాసాన్ని తదుపరి స్థాయికి తీసుకెళ్లడానికి సిద్ధంగా ఉన్నారా? మా ఇగ్నైటెడ్ మైండ్స్ ఎడ్యుకేషన్ యాక్సెస్‌లో చేరి మా నిపుణుల మార్గదర్శకత్వాన్ని అనుభవించండి.</p>
-        
-        </div>
+    </nav>
+
+    <div class="hero-section" id="home">
+        <h1>Welcome to <span class="highlight">Ignited Minds Edu</span></h1>
+        <p>Your trusted partner in academic excellence.</p>
     </div>
-    <h2>THANK YOU ❤️</h2>
-    <script src="ignitedminds.edu.js"></script>
+
+    <div class="container mt-4">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Experienced educators passionate about student success.</li>
+            <li>Personalized learning plans tailored to every student.</li>
+            <li>Comprehensive services including exam preparation and study skills.</li>
+            <li>Flexible scheduling options, including evenings and weekends.</li>
+            <li>A supportive environment for students to grow and excel.</li>
+        </ul>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Subject Tutoring</li>
+            <li>Exam Preparation</li>
+            <li>Homework Assistance</li>
+            <li>Study Skills & Strategies</li>
+            <li>Student-Mentor Interaction</li>
+            <li>Weekly Tests & Performance Tracking</li>
+            <li>Student Progress Reports to Parents</li>
+        </ul>
+    </div>
+
+    <div class="container mt-4 text-center">
+        <button class="btn btn-primary language-btn" onclick="toggleLanguage()">Switch Language</button>
+    </div>
+
+    <div class="container mt-5" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@ignitedminds.edu</p>
+        <p>Phone: +1234567890</p>
+        <p>Address: 123 Learning Street, Education City</p>
+    </div>
+
+    <div class="container mt-5" id="login">
+        <h2>Login / Register</h2>
+        <p><a href="#">Click here</a> to access your account or register as a new user.</p>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            alert("Language switching feature coming soon!");
+        }
+    </script>
     
-
-
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
